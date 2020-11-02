@@ -25,7 +25,7 @@ class InvalidBody extends AddressValidationFailed
         string $partName,
         string $contentType,
         OperationAddress $addr,
-        ?SchemaMismatch $prev = null
+        SchemaMismatch $prev = null
     ) : self {
         $exception          = $prev ? static::fromAddrAndPrev($addr, $prev) : static::fromAddr($addr);
         $exception->message = sprintf(

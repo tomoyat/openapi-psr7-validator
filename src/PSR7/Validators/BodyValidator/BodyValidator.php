@@ -73,7 +73,7 @@ final class BodyValidator implements MessageValidator
         }
     }
 
-    private function messageContentType(MessageInterface $message) : ?string
+    private function messageContentType(MessageInterface $message) : string
     {
         $contentTypes = $message->getHeader(self::HEADER_CONTENT_TYPE);
         if (! $contentTypes) {

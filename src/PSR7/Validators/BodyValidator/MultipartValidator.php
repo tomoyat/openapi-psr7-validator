@@ -196,7 +196,7 @@ class MultipartValidator implements MessageValidator
         return $multipartData;
     }
 
-    private function detectEncondingContentType(Encoding $encoding, StreamedPart $part, Schema $partSchema) : ?string
+    private function detectEncondingContentType(Encoding $encoding, StreamedPart $part, Schema $partSchema) : string
     {
         $contentType = $encoding->contentType;
 

@@ -51,7 +51,7 @@ final class SerializedParameter
     /** @var bool|null */
     private $explode;
 
-    public function __construct(CebeSchema $schema, ?string $contentType = null, ?string $style = null, ?bool $explode = null)
+    public function __construct(CebeSchema $schema, string $contentType = null, string $style = null, bool $explode = null)
     {
         $this->schema      = $schema;
         $this->contentType = $contentType;
@@ -121,7 +121,7 @@ final class SerializedParameter
      *
      * @return mixed
      */
-    private function castToSchemaType($value, ?string $type)
+    private function castToSchemaType($value, string $type)
     {
         if (($type === CebeType::BOOLEAN) && is_scalar($value) && preg_match('#^(true|false)$#i', (string) $value)) {
             return is_string($value) ? strtolower($value) === 'true' : (bool) $value;
@@ -153,7 +153,7 @@ final class SerializedParameter
      *
      * @return mixed
      */
-    protected function convertToSerializationStyle($value, ?Schema $schema)
+    protected function convertToSerializationStyle($value, Schema $schema)
     {
         if ($this->explode === false
             && in_array($this->style, [self::STYLE_FORM, self::STYLE_SPACE_DELIMITED, self::STYLE_PIPE_DELIMITED], true)) {

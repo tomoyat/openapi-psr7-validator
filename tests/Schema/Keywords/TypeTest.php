@@ -33,7 +33,7 @@ final class TypeTest extends SchemaValidatorTest
      *
      * @dataProvider validDataProvider
      */
-    public function testItValidatesTypeGreen(string $type, ?string $format, $validValue) : void
+    public function testItValidatesTypeGreen(string $type, string $format, $validValue) : void
     {
         $spec = <<<SPEC
 schema:

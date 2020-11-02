@@ -101,7 +101,7 @@ class OperationAddress
      *
      * @param array<string>|null $parameterNames
      */
-    protected function buildPattern(string $url, ?array &$parameterNames) : string
+    protected function buildPattern(string $url, array &$parameterNames) : string
     {
         $parameterNames = [];
         $pregParts      = [];

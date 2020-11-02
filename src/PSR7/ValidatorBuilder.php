@@ -27,7 +27,7 @@ class ValidatorBuilder
     /**
      * @return $this
      */
-    public function setCache(CacheItemPoolInterface $cache, ?int $ttl = null) : self
+    public function setCache(CacheItemPoolInterface $cache, int $ttl = null) : self
     {
         $this->cache = $cache;
         $this->ttl   = $ttl;

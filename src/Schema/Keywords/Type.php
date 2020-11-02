@@ -35,7 +35,7 @@ class Type extends BaseKeyword
      *
      * @throws TypeMismatch
      */
-    public function validate($data, string $type, ?string $format = null) : void
+    public function validate($data, string $type, string $format = null) : void
     {
         switch ($type) {
             case CebeType::OBJECT:

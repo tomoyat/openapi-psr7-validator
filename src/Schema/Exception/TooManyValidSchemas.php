@@ -21,7 +21,7 @@ class TooManyValidSchemas extends KeywordMismatch
         string $keyword,
         $data,
         array $validSchemas,
-        ?string $message = null
+        string $message = null
     ) : KeywordMismatch {
         $instance               = new self('Keyword validation failed: ' . $message, 0);
         $instance->keyword      = $keyword;
