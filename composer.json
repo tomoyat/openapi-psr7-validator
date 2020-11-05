@@ -1,5 +1,5 @@
 {
-    "name": "totem3/openapi-psr7-validator-for-70",
+    "name": "tomoyat/openapi-psr7-validator-for-70",
     "description": "fork of league/openapi-psr7-validator, in order to use from PHP7.0 temporarily",
     "keywords": [
         "OpenAPI",
