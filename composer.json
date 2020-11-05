@@ -23,7 +23,7 @@
     "require": {
         "php": ">=7.0",
         "ext-json": "*",
-        "tomoyat/php-openapi-for70": "1.4.3",
+        "tomoyat/php-openapi-for70": "1.4.4",
         "dflydev/fig-cookies": "^2.0",
         "psr/cache": "^1.0",
         "psr/http-message": "^1.0",
